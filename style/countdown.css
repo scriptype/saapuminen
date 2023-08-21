@@ -17,13 +17,13 @@
 
 @media (min-width: 940px) {
     .countdown {
-        font-size: 4.75vmin;
+        font-size: 5vmin;
         pointer-events: auto;
     }
 }
 
 .countdown .key {
-    font-size: 0.4em;
-    opacity: 0.5;
-    text-shadow: 0 0 3px #0007;
+    font-size: max(13px, 0.33em);
+    opacity: 0.53;
+    text-shadow: 0 0 3px #0008;
 }
