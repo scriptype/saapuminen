@@ -18,6 +18,10 @@ img {
     border: none;
 }
 
+fieldset {
+    border: none;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -136,17 +140,19 @@ img {
 }
 
 .selector {
-    border: none;
     position: absolute;
     bottom: 3vh;
     left: 50%;
     transform: translate(-50%);
     z-index: 1;
-    padding: 0.9em 1.25em 1em;
+    padding: 0.9em;
+    display: flex;
+    gap: max(0.6em, 2vmin);
     font-size: clamp(18px, 28px, 4vmin);
     backdrop-filter: blur(5px);
     border-radius: 15vmin;
     background: #fff4;
+    box-shadow: 1px 1px 10px #0001;
 }
 
 @media (min-width: 940px) {
@@ -155,6 +161,8 @@ img {
         border-radius: 0;
         background: none;
         backdrop-filter: none;
+        gap: 1.2vmin;
+        box-shadow: none;
     }
 }
 
