@@ -69,6 +69,7 @@ img {
         position: relative;
         inset: initial;
         display: block;
+        overflow-x: initial;
     }
 
     .visual-frame, #preloader, #shadow {
