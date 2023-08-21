@@ -58,6 +58,7 @@ fieldset {
 
 #preloader {
     height: 100vh;
+    transform: scale(.99);
 }
 
 #preloader.hidden {
