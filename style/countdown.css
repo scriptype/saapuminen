@@ -1,0 +1,29 @@
+.countdown {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(5, min-content);
+    place-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.8em;
+    font-size: 8vmin;
+    color: white;
+    font-variant: small-caps;
+    text-shadow: 0 0 5px #0006;
+    pointer-events: none;
+}
+
+@media (min-width: 940px) {
+    .countdown {
+        font-size: 4.75vmin;
+        pointer-events: auto;
+    }
+}
+
+.countdown .key {
+    font-size: 0.4em;
+    opacity: 0.5;
+    text-shadow: 0 0 3px #0007;
+}

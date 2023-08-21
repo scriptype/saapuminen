@@ -1,0 +1,57 @@
+.selector {
+    position: absolute;
+    bottom: 3vh;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    padding: 0.9em;
+    display: flex;
+    gap: max(0.6em, 2vmin);
+    font-size: clamp(18px, 28px, 4vmin);
+    backdrop-filter: blur(5px);
+    border-radius: 15vmin;
+    background: #fff4;
+    box-shadow: 1px 1px 10px #0001;
+}
+
+@media (min-width: 940px) {
+    .selector {
+        font-size: 2vmin;
+        border-radius: 0;
+        background: none;
+        backdrop-filter: none;
+        gap: 1.2vmin;
+        box-shadow: none;
+    }
+}
+
+.selector input {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.selector-thumb {
+    width: clamp(32px, 48px, 5vmin);
+    height: clamp(32px, 48px, 5vmin);
+    border-radius: 50%;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+@media (min-width: 940px) {
+    .selector-thumb {
+        transition: all .5s;
+    }
+
+    .selector input:focus + label .selector-thumb,
+    .selector-thumb:hover {
+        opacity: 0.8;
+    }
+}
+
+.selector input:checked + label .selector-thumb {
+    opacity: 1;
+}

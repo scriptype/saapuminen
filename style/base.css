@@ -1,0 +1,24 @@
+body {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+    height: 100dvh;
+    margin: 0;
+    background: linear-gradient(135deg, #aaa, #eee 40%);
+    overflow: hidden;
+    font: 1rem/0.8 monaco, menlo, Inconsolata, "Operator Mono", monospace;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 940px) {
+    .container {
+        width: 90vmin;
+        height: 60vmin;
+    }
+}
